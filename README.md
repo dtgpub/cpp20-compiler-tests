@@ -1,5 +1,9 @@
 # cpp20-compiler-tests
 Visual Studio 2022 C++ projects for testing C++ 20 code compilation speed (modules vs classic code).
+Each project contains 500 headers and 500 source files for classic projects.
+And 500 module interface files (*.ixx) and module implementation files (*.cpp) for C++ 20 module projects.
+Each source file/module-implementation file has <b>#include "framework.h"</b>, which contains: <b>Windows.h</b>, <b>TlHelp32.h</b>, <b>iostream</b> for compilation speed testing purposes.
+In projects with Precompiled Header, <b>"pch.h"</b> is included instead of direct <b>"framework.h"</b> inclusion.
 
 <h4>Projects:</h4>
 <ul>
